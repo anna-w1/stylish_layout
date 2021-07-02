@@ -1,10 +1,163 @@
-body{
+body {
     font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;
+    color: #222222;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 header {
     background: url(../img/first-bg.jpg) no-repeat center top / cover;
-height: 600px;
+    padding-bottom: 60px;
+    height: 100vh;
+    /*Картинка на высоту экрана */
+}
+
+.container {
+    width: 930px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: 41px;
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-top: 50px;
+}
+
+.menu li {
+    float: left;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 41px;
+    font-size: 14px;
+    line-height: 0.2em;
+}
+
+/* Решает проблему с float */
+.clearfix:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.titles_first {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 180px;
+
+}
+
+h1 {
+    font-size: 75px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+.button {
+    background-color: #fed136;
+    color: #484543;
+    border-radius: 4px;
+    display: block;
+    width: 240px;
+    padding: 20px 0;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.title {
+    padding-top: 115px;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+
+}
+
+.title p {
+    color: #777777;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.services {
+    margin-top: 80px;
+}
+
+.services_item {
+    width: 270px;
+    float: left;
+    text-align: center;
+}
+
+.services_item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.services_item p {
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.55em;
+}
+
+.services_item:last-child {
+    float: right;
+}
+
+.services_item:nth-child(2) {
+    margin-left: 55px;
+}
+
+#portfolio {
+    background: #f7f7f7;
+    padding-bottom: 120px;
+
+}
+
+#services {
+    padding-bottom: 120px;
+}
+
+.works {
+    margin-top: 70px;
+}
+
+.works img {
+    float: left;
+}
+
+.works img:last-child {
+    float: right;
+}
+
+.works img:nth-child(2) {
+    margin-left: 29px;
+}
+
+.about {
+    margin-top: 80px;
+
 }
